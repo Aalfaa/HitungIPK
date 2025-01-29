@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA & IPS Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>IPK & IPS</h1>
+    <div id="semesterContainer" class="container">
+        <div class="semester">
+            <h2>Semester 1</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Mata Kuliah</th>
+                        <th>Jumlah SKS</th>
+                        <th>Nilai</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="Course Name"></td>
+                        <td><input type="number" placeholder="Credits"></td>
+                        <td>
+                            <select>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                            </select>
+                        </td>
+                        <td><button class="deleteRow">X</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="semester-actions">
+                <button class="addRow">+ Tambah Matkul</button>
+                <button class="calculateIPS">Hitung IPS</button>
+            </div>
+            <div class="ipsResult"></div>
+        </div>
+    </div>
+    <div class="actions">
+        <button id="addSemester">Tambah Semester Baru</button>
+        <button id="calculateGPA">Hitung IPK</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
