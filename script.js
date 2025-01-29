@@ -55,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td><input type="text" placeholder="Course Name"></td>
-                        <td><input type="number" placeholder="Credits"></td>
+                        <td><input type="text" placeholder="Nama Mata Kuliah"></td>
+                        <td><input type="number" placeholder="Jumlah SKS"></td>
                         <td>
                             <select>
                                 <option value="A">A</option>
